@@ -25,8 +25,12 @@
           <div
             class="p-truncate"
             style="max-width: 240px"
-            v-text="value"
-          />
+          >
+            <a
+              :href="`mailto:${value}`"
+              v-text="value"
+            />
+          </div>
         </template>
       </PDataTable>
     </div>
