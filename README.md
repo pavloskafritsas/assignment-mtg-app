@@ -17,15 +17,38 @@ corepack enable
 
 The repository declares its package manager and version in `package.json`.
 
-## Setup
+## Repository Setup
 
-Install dependencies:
+The application depends on the local assignment-mtg-ui package, so both repositories should be cloned inside the same parent directory.
+
+Expected structure:
+
+```text
+assignment-mtg/
+├── assignment-mtg-ui/
+└── assignment-mtg-app/
+```
+
+Clone both repositories into the same directory:
+
+```bash
+mkdir assignment-mtg
+cd assignment-mtg
+
+git clone <ui-repository-url> assignment-mtg-ui
+git clone <app-repository-url> assignment-mtg-app
+
+cd assignment-mtg-app
+```
+Then install the application dependencies:
 
 ```bash
 pnpm install
 ```
 
-The UI library is consumed as a local package dependency during development.
+The UI library is consumed as a local package dependency from the sibling assignment-mtg-ui repository.
+
+## Dev
 
 Start the development server:
 
