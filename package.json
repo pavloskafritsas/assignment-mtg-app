@@ -1,0 +1,26 @@
+{
+  "name": "assignment-mtg-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview",
+    "test:e2e": "cypress run",
+    "test:e2e:open": "cypress open"
+  },
+  "dependencies": {
+    "assignment-mtg-ui": "link:../assignment-mtg-ui",
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.42",
+    "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "cypress": "^16.0.0",
+    "oxfmt": "^0.66.0",
+    "typescript": "^6.0.3"
+  },
+  "packageManager": "pnpm@11.26.0+sha512.fc0e2bf890b9f983611f1ab68c0637bce914390653699f83c1a78b005ed25f2c81e77920c8fd8eee2ecf0b58b28cdcb00a84d97f69bcf7c56b2f344710238664"
+}
